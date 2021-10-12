@@ -5,12 +5,8 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
-first_name = "Mohammad"
-last_name = "El-Hassan"
+count = 10
 
-print(f"{first_name} {last_name}")
-print(len(str(0)))
-
-age = 16
-
-print(f"First name: {first_name}\nAge: {age}")
+for i in range(10):
+    count -= 1
+    print(count)
