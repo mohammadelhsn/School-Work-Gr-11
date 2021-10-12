@@ -8,7 +8,7 @@
 first_name = "Mohammad"
 last_name = "El-Hassan"
 age = 16
-fav_band = "enter band name here"
+fav_band = "The score"
 fav_number = 43
 
 print(first_name)
