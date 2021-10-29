@@ -16,7 +16,4 @@ my_font = ("Arial", 20, "normal")
 
 t.write(ask)
 
-
-
-
 turtle.exitonclick()

@@ -5,7 +5,12 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
-pi = "3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679"
-index = pi[28]
 
-print(index)
+name = input("What is your name? ")
+
+if name.lower() == "mohammad":
+    print("Hello, Mohammad!")
+elif name.lower() == "joe":
+    print('joe mama')
+else: 
+    print(f"Hello {name.lower().capitalize()}!")
