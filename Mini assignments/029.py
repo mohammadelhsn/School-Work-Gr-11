@@ -5,6 +5,12 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
-num = input("Enter any number: ")
+from random import randint 
 
-print("Here is your number", num)
+bool1 = bool(randint(0, 1))
+bool2 = bool(randint(0, 1))
+
+if (bool1 == True and bool2 == True):
+    print("True")
+else: 
+    print("False")

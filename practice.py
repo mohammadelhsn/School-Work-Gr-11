@@ -5,12 +5,4 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
-
-name = input("What is your name? ")
-
-if name.lower() == "mohammad":
-    print("Hello, Mohammad!")
-elif name.lower() == "joe":
-    print('joe mama')
-else: 
-    print(f"Hello {name.lower().capitalize()}!")
+selection = int(input("Please pick one of the following:\n1) Pop\n2) Juice\n3) Water\n4) Coffee\n"))

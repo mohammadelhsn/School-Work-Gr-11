@@ -5,6 +5,19 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
-num = input("Enter any number: ")
+# True and True = True
 
-print("Here is your number", num)
+print(1 + 1 == 4 / 2 and 2 * 2 == 4) 
+
+# False and True = False
+
+print(1 - 1 == 4 / 2 and 2 * 2 == 4) 
+
+# True and False = False
+
+print(1 + 1 == 4 / 2 and 2 * 2 == 6) 
+
+# False and False = False
+
+print(1 - 1 == 4 / 2 and 2 * 2 == 6) 
+

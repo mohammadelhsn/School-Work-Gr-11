@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: This is a header
+#Date Created: 2021/09/30
+#Date Modified: 2021/09/30
+#############################################################################
+
 spaceship = input("Spaceship name?: ")
 crew_members = int(input("How many crew members? "))
 captain_height = float(input("How tall is the captain, including decimals? "))
