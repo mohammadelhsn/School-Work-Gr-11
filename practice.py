@@ -5,19 +5,8 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
-selection = int(input("Please pick one of the following:\n1) Pop\n2) Juice\n3) Water\n4) Coffee\n"))
+import webbrowser
 
-if (selection == 1):
-    print("Pepsi")
-elif (selection == 2):
-    print("Apple juice")
-elif (selection == 3):
-    print("H2O")
-elif (selection == 4):
-    print("Java")
-else: 
-    print("https://youtu.be/4dt0EVgVrSo")
-
-# Calcualte the sum of two numbers
-
+while True:
+    webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 
