@@ -3,6 +3,8 @@ from random import randint
 num = randint(1, 10)
 guesses = 0
 
+print(num)
+
 guess = int(input("Guess a number between 1 and 10.\nYou have three guesses:\n "))
 
 if (guess != num):

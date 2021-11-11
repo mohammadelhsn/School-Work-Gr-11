@@ -3,9 +3,11 @@ from random import randint
 num = randint(1,20)
 guesses = 5
 
+print(num)
+
 correct = False
 
-guess1 = int(input("Guess a number between 1 and 6: "))
+guess1 = int(input("Guess a number between 1 and 20: "))
 
 if (guess1 == num):
     print("You guessed the number!")

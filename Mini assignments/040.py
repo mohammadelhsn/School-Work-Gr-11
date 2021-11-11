@@ -1,6 +1,6 @@
 from winsound import * 
 import datetime
-PlaySound("piaon.wav", SND_FILENAME)
+PlaySound("piano.wav", SND_FILENAME)
 
 now = datetime.datetime.now()
 
