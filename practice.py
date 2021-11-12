@@ -5,8 +5,9 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
-import webbrowser
+args = "!help aww"
 
-while True:
-    webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-
+print(args)
+print(args.split(" "))
+print(args.split(" ")[0])
+print(args.split(" ")[0].startswith("!"))
