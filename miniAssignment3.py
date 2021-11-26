@@ -21,7 +21,6 @@ turtle.setup(500, 500)
 
 img = "computer.gif" if bgimg == 1 else "face.gif"
 color = "red" if colour == 1 else "blue"
-
 win = turtle.Screen()
 win.bgpic(img)
 
