@@ -40,7 +40,7 @@ def main():
     """    
         
     guesses = []
-    
+    guess_count = 0
     # shuffle the word and display it to the user
 
     print(f"Your scrambled word is {shuffled}")
@@ -116,27 +116,4 @@ def main():
     if (guess_word(input("What is your guess for the word? "))):
         return
     else: print("❌ | Wrong!")
-
-    # If guess is correct, replace the fourth underscore with the letter
-    # If guess is incorrect, leave it the way it is
-
-    guess3 = input("Guess the last letter: ")
-
-    if (guess3 == correct[3]):
-        print("✅ | Correct")
-        guesses.append(correct[3])
-        print("".join(guesses))
-    else: 
-        print("❌ | You got the letter wrong!")
-        guesses.append("?")
-        print("".join(guesses))
-        
-    if (guess_word(input("What is your guess for the word? "))):
-        return
-    
-    # tell them the word if they somehow couldn't guess it by this point?!?!
-    
-    else: print(f"❌ | Wrong! The word was {correct}")
-        
-        
 main()

@@ -1,19 +1,19 @@
 #############################################################################
 #Author: Mohammad El-Hassan
-#Description: This is a header
-#Date Created: 2021/10/12
-#Date Modified: 2021/10/12
+#Description: GAS IN THE USA [Challenging] 
+#Date Created: 2021/11/25
+#Date Modified: 2021/11/29
 #############################################################################
 
 from random import randint 
 
-## defining some cool variables
+## Defining some cool variables
 
 small_count = 0
 big_count = 0
 extra = 0
 
-# ask for user input
+# Ask for user input
 
 litres = int(input("How many litres in the gas tank? "))
 extra = input("Are you filling up any extra cans? ")
@@ -24,11 +24,11 @@ if (extra.lower() == "yes"):
 
 total_liters = litres + (small_count * 10) + (big_count * 20)
 
-# output total litres
+# Output total litres
 
 print(f"Total in litres: {total_liters}")
 
-# calculate canada price 
+# Calculate price in Canada 
 
 canada_prices = [1.19, 1.12 , 1.14, 1.16, 1.21]
 price_canada = canada_prices[randint(0, canada_prices.__len__() - 1)]
@@ -44,6 +44,8 @@ print(f"Price in Canada: {total_cost}")
 ## Litres to gallons ##
 
 gallons = total_liters / 3.785
+
+## Litres to gallons ##
 
 print(f"Gallons: {round(gallons, 2)}")
 
