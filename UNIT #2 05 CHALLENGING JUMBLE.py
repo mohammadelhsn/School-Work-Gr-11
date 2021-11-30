@@ -1,112 +1,142 @@
 #############################################################################
 #Author: Mohammad El-Hassan
-#Description: This is a header
-#Date Created: 2021/10/12
-#Date Modified: 2021/10/12
+#Description: Jumble [Challenging] 
+#Date Created: 2021/11/25
+#Date Modified: 2021/11/29
 #############################################################################
 
 from random import randint, shuffle
 
+# Define a function that way we can use the 'return' keyword 
+# to exit the program instead of having to use a break statement
+# or a bunch of guard clauses.
+
 def main():
+    # Define an a̶r̶r̶a̶y̶ list of words
+    
     words = ["able", "zone", "were", "user", "sold", "sake", "plus", "menu", "home", "farm"]
+    
+    # Get a random word from the list
+    
     word =  words[randint(0, len(words) - 1)]
+    
+    # Save the word in another variable so it doesn't get overriten when shuffled
     
     correct = word
 
-    missing_letters = []
-
     word = list(word.lower())
 
-    for letter in word:
-        if letter != correct[0]:
-            missing_letters.append(letter)
+    # 🔀 Shuffle the letters in the word
 
     shuffle(word)
-    word2 = "".join(word)
+    
+    shuffled = "".join(word)
+    
+    # Define a list and join to form the word
+        
+    """
+    I was going to originally doing this with a bunch of ternary operators
+    but, I got lazy and decided to just use a list instead 👍
+    """    
+        
+    guesses = []
+    
+    # shuffle the word and display it to the user
 
-    print(f"Your scrambled word is {word2}")
+    print(f"Your scrambled word is {shuffled}")
 
-    missing_words = '____'
+    print(f"Start making your guesses now: ____")
 
-    print(f"Here is your scrambled word: {missing_words}")
+    # define this handy function to do word guessing after the 
+    # user has guessed a letter
 
     def guess_word(guess):
+        # str.strip() removes all whitespace, 
+        # ⚠️ REMEMBER TO SAVE IT IN A NEW VARIABLE OTHERWISE IT WON'T WORK!!! ⚠️
+        
         better_word = guess.strip()
         if (better_word == correct):
-            print("You got it!")
+            print("✅ | You got it!")
             return True
         else: return False
 
+    # Guess #1
 
     guess = input("Guess the first letter ")
-    guess0_correct = False
+    
+    # If guess is correct, replace the first underscore with the letter
+    # If guess is incorrect, leave it the way it is
     
     if (guess == correct[0]):
-        print("Correct")
-        print(f"{correct[0]}___")
-        guess0_correct = True
+        print("✅ | Correct")
+        guesses.append(correct[0])
+        print("".join(guesses) + "?" * (4 - len(guesses)))
     else: 
-        print("You got the letter wrong!")
-        print("____")
+        print("❌ | You got the letter wrong!")
+        guesses.append("?")
+        print("".join(guesses) + "?" * (4 - len(guesses)))
         
+    if (guess_word(input("What is your guess for the word? "))):
+        return 
+    else: print("❌ | Wrong!")
+    
+    guess1 = input("Guess the second letter: ")
 
-    guess1 = input("Guess the second letter ")
-
-    guess1_correct = False
+    # If guess is correct, replace the second underscore with the letter
+    # If guess is incorrect, leave it the way it is
 
     if (guess1 == correct[1]):
-        print("Correct")
-        word_first = correct[0] if guess0_correct else "_"
-        print(f"{word_first}{correct[1]}__")
-        guess1_correct = True
+        print("✅ | Correct")
+        guesses.append(correct[1])
+        print("".join(guesses) + "?" * (4 - len(guesses)))
     else: 
-        print("You got the letter wrong!")
-        word_first = correct[0] if guess0_correct else "_"
-        print(f"{word_first}___")
+        print("❌ | You got the letter wrong!")
+        guesses.append("?")
+        print("".join(guesses) + "?" * (4 - len(guesses)))
 
-    if (guess_word(input("What is your guess for the word?"))):
+    if (guess_word(input("What is your guess for the word? "))):
         return 
-    else: print("Wrong!")
+    else: print("❌ | Wrong!")
         
 
-    guess2 = input("Guess the third letter")
-    guess2_correct = False
+    guess2 = input("Guess the third letter: ")
+
+    # If guess is correct, replace the third underscore with the letter
+    # If guess is incorrect, leave it the way it is
 
     if (guess2 == correct[2]):
-        print("Correct")
-        word_first = correct[0] if guess0_correct else "_"
-        word2 = correct[1] if guess1_correct else "_"
-        print(f"{word_first}{word2}{correct[2]}_")
-        guess2_correct = True
+        print("✅ | Correct")
+        guesses.append(correct[2])
+        print("".join(guesses) + "?" * (4 - len(guesses)))
     else: 
-        print("You got the letter wrong!")
-        word_first = correct[0] if guess0_correct else "_"
-        word2 = correct[1] if guess1_correct else "_"
-        print(f"{word_first}{word2}__")
+        print("❌ | You got the letter wrong!")
+        guesses.append("?")
+        print("".join(guesses) + "?" * (4 - len(guesses)))
 
-    if (guess_word(input("What is your guess for the word?"))):
+    if (guess_word(input("What is your guess for the word? "))):
         return
-    else: print("Wrong!")
-        
+    else: print("❌ | Wrong!")
 
-    guess3 = input("Guess the last letter ")
+    # If guess is correct, replace the fourth underscore with the letter
+    # If guess is incorrect, leave it the way it is
+
+    guess3 = input("Guess the last letter: ")
 
     if (guess3 == correct[3]):
-        print("Correct")
-        word_first = correct[0] if guess0_correct else "_"
-        word1 = correct[1] if guess1_correct else "_"
-        word2 = correct[2] if guess2_correct else "_"
-        print(f"{word_first}{word1}{word2}{correct[-1]}")
+        print("✅ | Correct")
+        guesses.append(correct[3])
+        print("".join(guesses))
     else: 
-        print("You got the letter wrong!")
-        word_first = correct[0] if guess0_correct else "_"
-        word1 = correct[1] if guess1_correct else "_"
-        word2 = correct[2] if guess1_correct else "_"
-        print(f"{word_first}{word1}{word2}_")
+        print("❌ | You got the letter wrong!")
+        guesses.append("?")
+        print("".join(guesses))
         
-    if (guess_word(input("What is your guess for the word?"))):
+    if (guess_word(input("What is your guess for the word? "))):
         return
-    else: print("Wrong!")
+    
+    # tell them the word if they somehow couldn't guess it by this point?!?!
+    
+    else: print(f"❌ | Wrong! The word was {correct}")
         
         
 main()
