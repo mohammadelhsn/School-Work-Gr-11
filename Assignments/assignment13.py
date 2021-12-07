@@ -5,9 +5,7 @@ def sum2(list):
     index = len(list)
     total = 0
     
-    while index != 0:
-        total += list[index-1]
-        index -= 1
+    while index != 0: total += list[index-1]; index -= 1
     return total
 
 newlist = []
