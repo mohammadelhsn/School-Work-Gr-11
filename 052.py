@@ -37,7 +37,3 @@ if (match == 3): print("You won 10$ #GetScammed")
 
 
 
-def test(test: str):
-    print(test.capitalize())
-    
-test(1)
