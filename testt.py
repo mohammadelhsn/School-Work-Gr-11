@@ -1,9 +1,5 @@
-import re
+from pydub import AudioSegment
+from pydub.playback import play
 
-coolStr = "Hello World"
-
-toReplace = input("What would you like to replace l with")
-
-print(coolStr.replace("l", toReplace))
-
-print(re.sub(r'l', toReplace, coolStr))
+song = AudioSegment.from_wav("win.wav")
+play(song)
