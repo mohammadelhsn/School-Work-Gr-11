@@ -5,6 +5,10 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
+# Imports
+
+# Constants
+
 price = float(input("Price of item: $"))
 tax = round(price * 0.13, 2)
 total = round(price + tax, 2)

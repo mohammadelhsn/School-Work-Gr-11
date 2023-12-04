@@ -5,12 +5,19 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
-# % number is the remainder of the division
+# Imports
+
+# Constants
+    # % number is the remainder of the division
+
+# Define variables
 
 num1 = 2
 num2 = 4
 num3 = 5.5
 num4 = 4.2
+
+# Output to the console
 
 print(f"My two numbers are {num1} and {num2}")
 print(F"I am adding, subtracting, multiplying and dividing")

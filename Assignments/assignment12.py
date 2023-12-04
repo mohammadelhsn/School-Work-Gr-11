@@ -1,4 +1,16 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Assignment 12
+#Date Created: 2021/10/12
+#Date Modified: 2021/10/12
+#############################################################################
+
+
+# Imports
+
 import random
+
+# Constants
 
 sentence = input("Enter a sentence: ")
 

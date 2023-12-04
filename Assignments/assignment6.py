@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Assignment 6
+#Date Created: 2021/10/12
+#Date Modified: 2021/10/12
+#############################################################################
+
 first_name = input('Enter your first name: ')
 last_name = input('Now, enter your last name! ')
 

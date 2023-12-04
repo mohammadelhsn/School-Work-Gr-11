@@ -5,9 +5,17 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
+# Imports
+
+# Constants
+
+# Define variables
+
 name = "Mohammad"
 apple = "granny smith"
 taste = "sour"
+
+# Output to the console
 
 print(f"My variables will be set to 'name', 'apple', and 'taste'")
 print("Name variable will be set to" + {name} + "apple variable will be set to" + {apple} + "and taste will be" + {taste})

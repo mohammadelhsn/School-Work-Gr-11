@@ -5,6 +5,10 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
+# Imports
+
+# Constants 
+
 print("Area of a Triangle")
 base = float(input("Enter the base: "))
 height = float(input("Enter the height: "))

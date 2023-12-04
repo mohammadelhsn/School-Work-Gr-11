@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Assignment 11
+#Date Created: 2021/10/12
+#Date Modified: 2021/10/12
+#############################################################################
+
 choice = int(input('What would you like to do?\n1) Have fun\n2) Do stuff\n'))
 
 if (choice == 1):

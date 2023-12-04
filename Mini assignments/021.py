@@ -5,6 +5,10 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
+# Imports
+
+# Constants
+
 num = input("Enter any number: ")
 
 print("Here is your number", num)

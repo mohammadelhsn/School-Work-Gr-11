@@ -8,6 +8,7 @@
 import math
 
 # Ask for user input
+
 width = input("Enter width (measurement in feet) ")
 inches1 = input('Enter inches ')
 length = input("Enter length (measurement in feet) ") 
@@ -19,6 +20,7 @@ inches2 = input('Enter inches ')
 square_feet = (float(width) * 12 + int(inches1)) * (float(length) * 12 + int(inches2)) / 144
 boxes = (square_feet / 18.31)
 print(boxes)
+
 # Round up because if you need 5.4 boxes you will need to buy 6
 
 total_boxes = int(math.ceil(boxes) + 1)

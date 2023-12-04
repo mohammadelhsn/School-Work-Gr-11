@@ -1,4 +1,15 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Assignment 4
+#Date Created: 2021/10/12
+#Date Modified: 2021/10/12
+#############################################################################
+
+# Imports
+
 import turtle
+
+# Constants
 
 width1 = int(input("Enter the width of the first circle: "))
 circolour = input("Enter the colour of the first circle: ")

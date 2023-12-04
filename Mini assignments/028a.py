@@ -5,6 +5,11 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
+
+# Imports 
+
+# Constants
+
 age = int(input("How old are you? "))
 
 if (age >= 16):

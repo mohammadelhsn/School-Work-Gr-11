@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Assignment 7
+#Date Created: 2021/10/12
+#Date Modified: 2021/10/12
+#############################################################################
+
 name = input("What is your name? ")
 name_len = len(name)
 first_letter = name[0]

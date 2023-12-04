@@ -5,7 +5,11 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
+# Imports
+
 from random import randint
+
+# Constants
 
 rps = ["rock", "paper", "scissors"]
 

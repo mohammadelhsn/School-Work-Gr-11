@@ -5,6 +5,10 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
+# Imports
+
+# Constants
+
 temp = int(input("Enter your temperature "))
 
 if (temp > 79):

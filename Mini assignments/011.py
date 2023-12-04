@@ -5,12 +5,19 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
+# Imports
+
+# Constants
+
 people = 5 
 slices = 24
 
-# Per person
+# Per Person
+
 rem = slices % people
 per = (slices - rem) / people
+
+# Output to the console
 
 print(f"I have set two variables - 'people' {people} and 'slices' {slices}")
 print(f"We are using modulus and division")

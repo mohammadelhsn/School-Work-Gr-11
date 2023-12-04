@@ -5,6 +5,10 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
+# Imports
+
+# Constants
+
 grade = int(input("Enter your mark: "))
 
 if (grade >= 50):

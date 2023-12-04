@@ -5,6 +5,10 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
+# Imports
+
+# Constants
+
 rate = float(input('What is your rate of pay? '))
 hours = float(input("How many hours did you work? "))
 gross_pay = rate * hours

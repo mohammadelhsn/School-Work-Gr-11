@@ -5,7 +5,11 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
+# Imports
+
 from random import randint 
+
+# Constants
 
 bool1 = bool(randint(0, 1))
 bool2 = bool(randint(0, 1))

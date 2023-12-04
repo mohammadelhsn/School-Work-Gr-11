@@ -5,7 +5,15 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
+# Imports
+
+# Constants
+
+# Define variables
+
 name = "Mohammad"
+
+# Output results
 
 print(f"I set my variable 'name' to '{name}'")
 print("I determine the length of the variable")

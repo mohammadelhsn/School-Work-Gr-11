@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Assignment 9
+#Date Created: 2021/10/12
+#Date Modified: 2021/10/12
+#############################################################################
+
 def getTotal(nums):
     total = 0
     for i in nums:

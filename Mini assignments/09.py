@@ -5,8 +5,16 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
-print("=" * 20)
+
+# Imports
+
+# Constants
+
+# Define variables
 
 x = "="
 
+# Output to the console
+
+print("=" * 20)
 print(x * 20)

@@ -1,3 +1,10 @@
+#############################################################################
+#Author: Mohammad El-Hassan
+#Description: Assignment 5
+#Date Created: 2021/10/12
+#Date Modified: 2021/10/12
+#############################################################################
+
 ###
 # You can use comparison operators to compare two values. In functions if you have an 
 # optional argument or parameter, you need to be able to find out if the argument has been

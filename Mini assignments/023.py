@@ -5,6 +5,10 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
+# Imports 
+
+# Constants
+
 spaceship = input("Spaceship name?: ")
 crew_members = int(input("How many crew members? "))
 captain_height = float(input("How tall is the captain, including decimals? "))

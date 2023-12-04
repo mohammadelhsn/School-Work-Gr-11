@@ -5,5 +5,11 @@
 #Date Modified: 2021/09/30
 #############################################################################
 
+# Imports
+
+# Constants
+
+# Output to the console
+
 print("John yelled \"How much money did we win?\" As he jumped up and down")
 print('John yelled \'How much money did we win?\' As he jumped up and down')
